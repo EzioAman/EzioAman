@@ -1,17 +1,23 @@
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/EzioAman/EzioAman/main/eris.svg"
-    width="900"
-    alt="Aman Sinha — ERIS"
-  />
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://github.com/EzioAman/ERIS">ERIS</a>
-  ·
+<a href="https://github.com/EzioAman/Eris">
+  <img
+    src="https://raw.githubusercontent.com/EzioAman/EzioAman/main/assets/eris.svg"
+    width="100%"
+    alt="ERIS — Agentic AI"
+  />
+</a>
+
+<p>
+  <a href="https://github.com/EzioAman/Eris">ERIS</a>
+  ✧
   <a href="https://github.com/EzioAman/SANI">SANI</a>
-  ·
+  ✧
   <a href="https://github.com/EzioAman/iNTellectual">iNTellectual</a>
-  ·
+  ✧
   <a href="https://github.com/EzioAman">GitHub</a>
 </p>
+
+<i>Building intelligent systems. Automating the future.</i>
+
+</div>
