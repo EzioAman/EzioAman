@@ -1,0 +1,602 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="900"
+  height="430"
+  viewBox="0 0 900 430"
+>
+
+<defs>
+
+  <!-- Background -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#03070c"/>
+    <stop offset="55%" stop-color="#07101a"/>
+    <stop offset="100%" stop-color="#0b1422"/>
+  </linearGradient>
+
+  <!-- Main neon -->
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00d9ff"/>
+    <stop offset="48%" stop-color="#6366f1"/>
+    <stop offset="100%" stop-color="#b026ff"/>
+  </linearGradient>
+
+  <!-- Blue-purple -->
+  <linearGradient id="bluePurple" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00d9ff"/>
+    <stop offset="100%" stop-color="#9b5cff"/>
+  </linearGradient>
+
+  <!-- Hair glow gradient: cyan -> violet -> pink, ties the "anime AI girl" theme together -->
+  <linearGradient id="hairGlow" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#00e5ff"/>
+    <stop offset="55%" stop-color="#9b5cff"/>
+    <stop offset="100%" stop-color="#ff6ec7"/>
+  </linearGradient>
+
+  <!-- Glow -->
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="2"/>
+  </filter>
+
+  <filter id="hairGlowFilter" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="2.2"/>
+  </filter>
+
+  <radialGradient id="auraGrad" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#9b5cff" stop-opacity="0.32"/>
+    <stop offset="60%" stop-color="#00d9ff" stop-opacity="0.11"/>
+    <stop offset="100%" stop-color="#00d9ff" stop-opacity="0"/>
+  </radialGradient>
+
+</defs>
+
+
+<!-- ========================================================= -->
+<!-- BACKGROUND -->
+<!-- ========================================================= -->
+
+<rect
+  x="1"
+  y="1"
+  width="898"
+  height="428"
+  rx="18"
+  fill="url(#bg)"
+  stroke="#293342"
+  stroke-width="1.5"
+/>
+
+
+<!-- ========================================================= -->
+<!-- BACKGROUND PARTICLES -->
+<!-- ========================================================= -->
+
+<g fill="#00cfff">
+
+  <circle cx="80" cy="45" r="1"/>
+  <circle cx="145" cy="75" r="1"/>
+  <circle cx="220" cy="32" r="1.2"/>
+  <circle cx="315" cy="60" r="1"/>
+  <circle cx="370" cy="25" r="1"/>
+  <circle cx="430" cy="55" r="1.2"/>
+  <circle cx="495" cy="35" r="1"/>
+  <circle cx="555" cy="70" r="1"/>
+  <circle cx="615" cy="40" r="1.2"/>
+  <circle cx="700" cy="65" r="1"/>
+  <circle cx="780" cy="42" r="1"/>
+  <circle cx="840" cy="82" r="1.2"/>
+
+  <circle cx="40" cy="150" r="1"/>
+  <circle cx="335" cy="155" r="1"/>
+  <circle cx="520" cy="130" r="1"/>
+  <circle cx="585" cy="180" r="1"/>
+  <circle cx="865" cy="155" r="1"/>
+
+</g>
+
+
+<g fill="#00cfff">
+
+  <circle cx="145" cy="75" r="1">
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="430" cy="55" r="1">
+    <animate
+      attributeName="opacity"
+      values="1;0.15;1"
+      dur="2.4s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="700" cy="65" r="1">
+    <animate
+      attributeName="opacity"
+      values="0.2;1;0.2"
+      dur="3.4s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+</g>
+
+
+<!-- ========================================================= -->
+<!-- LEFT INFORMATION -->
+<!-- ========================================================= -->
+
+<text
+  x="45"
+  y="70"
+  fill="#8b9bb0"
+  font-family="monospace"
+  font-size="11"
+>
+  &gt; Hello, I am...
+</text>
+
+
+<text
+  x="45"
+  y="112"
+  fill="url(#bluePurple)"
+  font-family="monospace"
+  font-size="48"
+  font-weight="bold"
+>
+  AMAN SINHA
+</text>
+
+<text
+  x="45"
+  y="145"
+  fill="#d7dee8"
+  font-family="monospace"
+  font-size="12"
+>
+  <tspan fill="#00d9ff">AI / ML ENGINEER · AUTOMATION · EDGE AI</tspan>
+</text>
+
+<text
+  x="45"
+  y="172"
+  fill="#b7c2d0"
+  font-family="monospace"
+  font-size="12"
+>
+  BUILDING
+  <tspan fill="#00d9ff"> INTELLIGENT SYSTEMS</tspan>
+</text>
+
+<!-- STATUS -->
+
+<circle
+  cx="51"
+  cy="204"
+  r="5"
+  fill="#00d96b"
+  filter="url(#softGlow)"
+>
+  <animate
+    attributeName="opacity"
+    values="1;0.25;1"
+    dur="1.8s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<text
+  x="66"
+  y="208"
+  fill="#00d96b"
+  font-family="monospace"
+  font-size="11"
+>
+  ONLINE · IN DEVELOPMENT
+</text>
+
+
+<!-- AGENTIC BADGE -->
+
+<rect
+  x="39"
+  y="230"
+  width="270"
+  height="42"
+  rx="8"
+  fill="#050b12"
+  stroke="url(#bluePurple)"
+  stroke-width="1.5"
+/>
+
+<text
+  x="53"
+  y="256"
+  fill="#d8e0eb"
+  font-family="monospace"
+  font-size="11"
+>
+  ERIS IS AN
+  <tspan fill="#9b5cff"> AGENTIC AI </tspan>
+  SYSTEM
+</text>
+
+
+<!-- ========================================================= -->
+<!-- THINK / PLAN / ACT / REMEMBER -->
+<!-- ========================================================= -->
+
+<text x="45" y="325" fill="#d8e0eb" font-family="monospace" font-size="11">THINK</text>
+<text x="100" y="325" fill="#526174" font-family="monospace" font-size="11">→</text>
+<text x="128" y="325" fill="#d8e0eb" font-family="monospace" font-size="11">PLAN</text>
+<text x="180" y="325" fill="#526174" font-family="monospace" font-size="11">→</text>
+<text x="208" y="325" fill="#d8e0eb" font-family="monospace" font-size="11">ACT</text>
+<text x="250" y="325" fill="#526174" font-family="monospace" font-size="11">→</text>
+<text x="278" y="325" fill="#d8e0eb" font-family="monospace" font-size="11">REMEMBER</text>
+
+
+<!-- ========================================================= -->
+<!-- CAPABILITIES -->
+<!-- ========================================================= -->
+
+<text x="45" y="375" fill="#68788c" font-family="monospace" font-size="10">◈ MEMORY</text>
+<text x="120" y="375" fill="#68788c" font-family="monospace" font-size="10">⚒ TOOLS</text>
+<text x="195" y="375" fill="#68788c" font-family="monospace" font-size="10">⌘ REASONING</text>
+<text x="300" y="375" fill="#68788c" font-family="monospace" font-size="10">⚡ AUTONOMY</text>
+
+
+<!-- ========================================================= -->
+<!-- ERIS — vector anime-AI girl avatar -->
+<!-- Everything below is centered on (485, 200) to match the -->
+<!-- aura rings, fixing the earlier off-center glow issue.    -->
+<!-- ========================================================= -->
+
+<g>
+
+  <!-- Whole-character float -->
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="0 0; 0 -7; 0 0"
+    dur="4.4s"
+    repeatCount="indefinite"
+  />
+
+  <!-- Aura glow, centered exactly on the head (485, 200) -->
+  <circle cx="485" cy="205" r="150" fill="url(#auraGrad)">
+    <animate attributeName="r" values="140;158;140" dur="4.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="485" cy="205" r="118" fill="none" stroke="#007cff" stroke-width="1" opacity="0.12">
+    <animateTransform attributeName="transform" type="rotate" from="0 485 205" to="360 485 205" dur="38s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="485" cy="205" r="98" fill="none" stroke="#634cff" stroke-width="1" opacity="0.15">
+    <animateTransform attributeName="transform" type="rotate" from="360 485 205" to="0 485 205" dur="28s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="485" cy="205" r="80" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.13">
+    <animateTransform attributeName="transform" type="rotate" from="0 485 205" to="360 485 205" dur="22s" repeatCount="indefinite"/>
+  </circle>
+
+
+  <!-- Ground shadow -->
+  <ellipse cx="485" cy="368" rx="82" ry="11" fill="#000" opacity="0.35">
+    <animate attributeName="rx" values="82;70;82" dur="4.4s" repeatCount="indefinite"/>
+  </ellipse>
+
+
+  <!-- ===================== BACK HAIR (behind body, longest strands) ===================== -->
+  <g stroke="url(#hairGlow)" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#hairGlowFilter)" opacity="0.85">
+
+    <g>
+      <path d="M455 145 C420 200 415 300 440 400"/>
+      <animateTransform attributeName="transform" type="rotate" values="-3 455 145; 3 455 145; -3 455 145" dur="5.2s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <path d="M515 145 C550 200 555 300 530 400"/>
+      <animateTransform attributeName="transform" type="rotate" values="3 515 145; -3 515 145; 3 515 145" dur="4.8s" begin=".3s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <path d="M485 138 C480 210 490 300 485 405"/>
+      <animateTransform attributeName="transform" type="rotate" values="-2 485 138; 2 485 138; -2 485 138" dur="5.6s" begin=".6s" repeatCount="indefinite"/>
+    </g>
+
+  </g>
+
+
+  <!-- ===================== SIDE STRANDS (flowing past shoulders) ===================== -->
+  <g stroke="url(#hairGlow)" stroke-width="2.6" stroke-linecap="round" fill="none" filter="url(#hairGlowFilter)" opacity="0.9">
+
+    <g>
+      <path d="M418 165 C385 205 375 270 392 335 C400 362 392 378 385 390"/>
+      <animateTransform attributeName="transform" type="rotate" values="-4 418 165; 4 418 165; -4 418 165" dur="3.6s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <path d="M552 165 C585 205 595 270 578 335 C570 362 578 378 585 390"/>
+      <animateTransform attributeName="transform" type="rotate" values="4 552 165; -4 552 165; 4 552 165" dur="3.9s" begin=".4s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <path d="M425 195 C400 235 398 280 412 320"/>
+      <animateTransform attributeName="transform" type="rotate" values="-3 425 195; 3 425 195; -3 425 195" dur="3.2s" begin=".8s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <path d="M545 195 C570 235 572 280 558 320"/>
+      <animateTransform attributeName="transform" type="rotate" values="3 545 195; -3 545 195; 3 545 195" dur="3.4s" begin="1.1s" repeatCount="indefinite"/>
+    </g>
+
+  </g>
+
+
+  <!-- ===================== HEAD ===================== -->
+
+  <!-- Small glowing hair-clip / antenna light — nods to the old status LED -->
+  <circle cx="485" cy="126" r="4" fill="#00e5ff" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2.1s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="485" y1="130" x2="485" y2="140" stroke="#00e5ff" stroke-width="1.5" opacity="0.6"/>
+
+  <rect
+    x="415" y="135" width="140" height="130" rx="46"
+    fill="#050a11" stroke="url(#neon)" stroke-width="3.5"
+    filter="url(#glow)"
+  />
+
+  <!-- Ears -->
+  <ellipse cx="413" cy="205" rx="7" ry="12" fill="#050a11" stroke="url(#neon)" stroke-width="2"/>
+  <ellipse cx="557" cy="205" rx="7" ry="12" fill="#050a11" stroke="url(#neon)" stroke-width="2"/>
+
+  <!-- Blush -->
+  <ellipse cx="437" cy="228" rx="11" ry="6" fill="#ff8fd6" opacity="0.55"/>
+  <ellipse cx="533" cy="228" rx="11" ry="6" fill="#ff8fd6" opacity="0.55"/>
+
+  <!-- Eyebrows -->
+  <path d="M438 178 Q452 172 466 178" fill="none" stroke="#a9b8cc" stroke-width="2" stroke-linecap="round"/>
+  <path d="M504 178 Q518 172 532 178" fill="none" stroke="#a9b8cc" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Normal eyes: open + periodic blink -->
+  <g>
+    <ellipse cx="452" cy="206" rx="13" ry="16" fill="#00e5ff" filter="url(#glow)">
+      <animate attributeName="ry" values="16;16;2;16;16" keyTimes="0;0.86;0.9;0.94;1" dur="5.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="518" cy="206" rx="13" ry="16" fill="#00e5ff" filter="url(#glow)">
+      <animate attributeName="ry" values="16;16;2;16;16" keyTimes="0;0.86;0.9;0.94;1" dur="5.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="447" cy="200" r="3" fill="#eafcff"/>
+    <circle cx="513" cy="200" r="3" fill="#eafcff"/>
+
+    <!-- fade this whole normal-eyes group out during the "happy" expression window -->
+    <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.72;0.78;0.88;0.94;1" dur="11s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Happy (^ ^) eyes: cross-fades in periodically for an expression change -->
+  <g opacity="0" stroke="#00e5ff" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow)">
+    <path d="M438 208 Q452 196 466 208"/>
+    <path d="M504 208 Q518 196 532 208"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.72;0.78;0.88;0.94;1" dur="11s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Mouth — gentle idle talking wiggle -->
+  <path d="M472 240 Q485 247 498 240" fill="none" stroke="#ff9fd6" stroke-width="3" stroke-linecap="round">
+    <animate
+      attributeName="d"
+      values="
+        M472 240 Q485 247 498 240;
+        M472 240 Q485 252 498 240;
+        M472 240 Q485 240 498 240;
+        M472 240 Q485 247 498 240"
+      dur="2.6s"
+      repeatCount="indefinite"
+    />
+  </path>
+
+
+  <!-- ===================== FRONT BANGS (over forehead, in front of head shape) ===================== -->
+  <g stroke="url(#hairGlow)" stroke-width="2.4" stroke-linecap="round" fill="none" filter="url(#hairGlowFilter)" opacity="0.95">
+
+    <g>
+      <path d="M485 132 C462 140 448 165 452 190"/>
+      <animateTransform attributeName="transform" type="rotate" values="-2 485 132; 2 485 132; -2 485 132" dur="3.1s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <path d="M485 132 C508 140 522 165 518 190"/>
+      <animateTransform attributeName="transform" type="rotate" values="2 485 132; -2 485 132; 2 485 132" dur="3.3s" begin=".2s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <path d="M462 135 C450 148 445 162 449 175"/>
+      <animateTransform attributeName="transform" type="rotate" values="-3 462 135; 3 462 135; -3 462 135" dur="2.8s" begin=".5s" repeatCount="indefinite"/>
+    </g>
+
+  </g>
+
+
+  <!-- ===================== SHOULDERS / TORSO ===================== -->
+
+  <ellipse cx="432" cy="308" rx="16" ry="30" fill="#07101a" stroke="#4254d8" stroke-width="2"/>
+  <ellipse cx="538" cy="308" rx="16" ry="30" fill="#07101a" stroke="#4254d8" stroke-width="2"/>
+
+  <rect x="448" y="270" width="74" height="90" rx="28" fill="#050b13" stroke="url(#neon)" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Collar / bow accent -->
+  <path d="M460 270 L485 296 L510 270" fill="none" stroke="#a66cff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M468 305 L485 297 L502 305 L485 313 Z" fill="#0b1422" stroke="#ff6ec7" stroke-width="1.6" stroke-linejoin="round"/>
+  <circle cx="485" cy="305" r="3" fill="#ff6ec7"/>
+
+  <!-- AI core, pulsing -->
+  <circle cx="485" cy="325" r="20" fill="#050a11" stroke="url(#neon)" stroke-width="3" filter="url(#glow)"/>
+  <circle cx="485" cy="325" r="7" fill="#00cfff">
+    <animate attributeName="r" values="6;10;6" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+</g>
+
+
+<!-- ========================================================= -->
+<!-- CHAT BUBBLE -->
+<!-- ========================================================= -->
+
+<path
+  d="
+    M635 95
+    Q635 82 648 82
+    L842 82
+    Q857 82 857 97
+    L857 283
+    Q857 298 842 298
+    L648 298
+    Q635 298 635 285
+    Z
+  "
+  fill="#070d16"
+  stroke="url(#neon)"
+  stroke-width="2"
+/>
+
+
+<!-- Bubble tail -->
+
+<path
+  d="M635 180 L608 195 L635 207"
+  fill="#070d16"
+  stroke="url(#neon)"
+  stroke-width="2"
+/>
+
+
+<!-- Chat header -->
+
+<text
+  x="657"
+  y="119"
+  fill="#a55cff"
+  font-family="monospace"
+  font-size="15"
+  font-weight="bold"
+>
+  ERIS
+</text>
+
+
+<!-- Chat dots -->
+
+<circle cx="817" cy="113" r="3" fill="#315c8d">
+  <animate attributeName="opacity" values=".3;1;.3" dur="1.2s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="829" cy="113" r="3" fill="#4163a4">
+  <animate attributeName="opacity" values=".3;1;.3" dur="1.2s" begin=".2s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="841" cy="113" r="3" fill="#7650bd">
+  <animate attributeName="opacity" values=".3;1;.3" dur="1.2s" begin=".4s" repeatCount="indefinite"/>
+</circle>
+
+
+<!-- ========================================================= -->
+<!-- TYPING DOTS -->
+<!-- ========================================================= -->
+
+<g>
+
+  <g opacity="1">
+
+    <circle cx="660" cy="150" r="3" fill="#9b5cff">
+      <animate attributeName="cy" values="150;145;150" dur=".8s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="672" cy="150" r="3" fill="#4c9eff">
+      <animate attributeName="cy" values="150;145;150" dur=".8s" begin=".15s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="684" cy="150" r="3" fill="#00d9ff">
+      <animate attributeName="cy" values="150;145;150" dur=".8s" begin=".3s" repeatCount="indefinite"/>
+    </circle>
+
+    <animate attributeName="opacity" values="1;1;0;0;0" keyTimes="0;.12;.2;.42;1" dur="9s" repeatCount="indefinite"/>
+
+  </g>
+
+
+  <!-- MESSAGE -->
+
+  <g>
+
+    <text x="657" y="153" fill="#e2e8f0" font-family="monospace" font-size="12">Hi! I am Eris,</text>
+
+    <text x="657" y="176" fill="#e2e8f0" font-family="monospace" font-size="12">
+      an
+      <tspan fill="#00d9ff"> agentic AI </tspan>
+      being
+    </text>
+
+    <text x="657" y="199" fill="#e2e8f0" font-family="monospace" font-size="12">developed by</text>
+
+    <text x="657" y="222" fill="#a66cff" font-family="monospace" font-size="12" font-weight="bold">Aman Sinha.</text>
+
+    <text x="657" y="255" fill="#e2e8f0" font-family="monospace" font-size="11">Stay tuned for the</text>
+
+    <text x="657" y="275" fill="#e2e8f0" font-family="monospace" font-size="11">upcoming release! 🚀</text>
+
+    <animate attributeName="opacity" values="0;0;1;1;1" keyTimes="0;.18;.3;.95;1" dur="9s" repeatCount="indefinite"/>
+
+  </g>
+
+</g>
+
+
+<!-- ========================================================= -->
+<!-- CLICKABLE ERIS AREA -->
+<!-- ========================================================= -->
+
+<a href="https://github.com/EzioAman/Eris">
+
+  <rect x="615" y="315" width="245" height="72" rx="12" fill="#050b12" stroke="url(#neon)" stroke-width="1.5"/>
+
+  <rect x="630" y="330" width="42" height="42" rx="8" fill="#07101a" stroke="#00d9ff" stroke-width="1.5"/>
+
+  <path d="M644 350
+       C638 344 638 338 643 334
+       C648 330 654 330 659 335
+       L663 339" fill="none" stroke="#00d9ff" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M658 354
+       C664 360 664 366 659 370
+       C654 374 648 374 643 369
+       L639 365" fill="none" stroke="#9b5cff" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="687" y="344" fill="#00d9ff" font-family="monospace" font-size="12" font-weight="bold">CLICK THE ERIS BOT</text>
+  <text x="687" y="363" fill="#00d9ff" font-family="monospace" font-size="12" font-weight="bold">TO KNOW MORE</text>
+  <text x="827" y="365" fill="#a66cff" font-family="monospace" font-size="22">→</text>
+
+</a>
+
+
+<!-- ========================================================= -->
+<!-- BOTTOM FADE -->
+<!-- ========================================================= -->
+
+<line x1="40" y1="400" x2="860" y2="400" stroke="#172333" stroke-width="1"/>
+
+</svg>
