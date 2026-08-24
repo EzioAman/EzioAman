@@ -20,7 +20,7 @@
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/EzioAman/EzioAman/main/assets/eris.svg"
+    src="https://raw.githubusercontent.com/EzioAman/EzioAman/main/eris.svg"
     width="700"
     alt="ERIS"
   >
