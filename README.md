@@ -2,7 +2,7 @@
 
 <a href="https://github.com/EzioAman/Eris">
   <img
-    src="https://raw.githubusercontent.com/EzioAman/EzioAman/main/assets/eris.svg"
+    src="https://raw.githubusercontent.com/EzioAman/EzioAman/main/eris.svg"
     width="100%"
     alt="ERIS — Agentic AI"
   />
